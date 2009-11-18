@@ -6,12 +6,13 @@ Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
 License:    GPL or Artistic
 Group:      Development/Perl
-Summary:    Edit configuration files through Augeas C library
+Summary:    Elapsed and estimated finish time reporting
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source:     http://www.cpan.org/modules/by-module/Config/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:  perl-devel
 BuildRequires:  perl(Module::Build)
 BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildArch: noarch
 
 %description
 Elapsed and estimated finish time reporting.
