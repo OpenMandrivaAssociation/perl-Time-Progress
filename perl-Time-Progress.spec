@@ -9,6 +9,7 @@ Group:      Development/Perl
 Summary:    Elapsed and estimated finish time reporting
 Url:        https://search.cpan.org/dist/%{upstream_name}
 Source:     http://www.cpan.org/modules/by-module/Config/%{upstream_name}-%{upstream_version}.tar.gz
+BuildRequires:	make
 BuildRequires:  perl-devel
 BuildRequires:  perl(Module::Build)
 BuildRoot:  %{_tmppath}/%{name}-%{version}
