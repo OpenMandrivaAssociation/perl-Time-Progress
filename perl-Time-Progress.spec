@@ -1,14 +1,14 @@
 %define upstream_name       Time-Progress
-%define upstream_version    1.7
+%define upstream_version    2.15
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    %{upstream_version}
+Release:    1
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Elapsed and estimated finish time reporting
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source:     http://www.cpan.org/modules/by-module/Config/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://github.com/cade-vs/perl-time-progress
+Source:     https://cpan.metacpan.org/authors/id/C/CA/CADE/Time-Progress-%{upstream_version}.tar.gz
 BuildRequires:	make
 BuildRequires:  perl-devel
 BuildRequires:  perl(Module::Build)
