@@ -1,14 +1,12 @@
 %define upstream_name       Time-Progress
-%define upstream_version    2.15
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    2.15
+Release:    2
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Elapsed and estimated finish time reporting
 Url:        https://github.com/cade-vs/perl-time-progress
-Source:     https://cpan.metacpan.org/authors/id/C/CA/CADE/Time-Progress-%{upstream_version}.tar.gz
+Source:     https://cpan.metacpan.org/authors/id/C/CA/CADE/Time-Progress-%{version}.tar.gz
 BuildRequires:	make
 BuildRequires:  perl-devel
 BuildRequires:  perl(Module::Build)
@@ -19,7 +17,7 @@ BuildArch: noarch
 Elapsed and estimated finish time reporting.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor destdir=${RPM_BUILD_ROOT}/
