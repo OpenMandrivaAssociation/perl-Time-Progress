@@ -2,7 +2,7 @@
 %define upstream_version 2.15
 Name:       perl-%{upstream_name}
 Version:	2.15
-Release:	3
+Release:	4
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Elapsed and estimated finish time reporting
