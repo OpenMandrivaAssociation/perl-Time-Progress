@@ -2,7 +2,7 @@
 %define upstream_version 2.15
 Name:       perl-%{upstream_name}
 Version:	2.15
-Release:	4
+Release:	5
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Elapsed and estimated finish time reporting
@@ -17,7 +17,7 @@ BuildArch: noarch
 Elapsed and estimated finish time reporting.
 
 %prep
-%setup -q -n Time-Progress-2.15 
+%setup -q -n Time-Progress-2.15
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor destdir=${RPM_BUILD_ROOT}/
